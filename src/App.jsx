@@ -14,7 +14,7 @@ function App() {
           <img src={heroImg} className="base" width="170" height="179" alt="" />
           <img src={reactLogo} className="framework" alt="React logo" />
           <img src={viteLogo} className="vite" alt="Vite logo" />
-          <img src="/profile.jpg" alt="Profile Picture" className="profile-img" />
+          <img src="/profile.jpg" alt="Profile" />
         </div>
         <div>
           <h1>Get started</h1>
