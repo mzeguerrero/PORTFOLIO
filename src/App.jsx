@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+// Make sure this file actually exists in src/assets/profile.jpg
+import profileImg from './assets/profile.jpg'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,8 +16,8 @@ function App() {
           <img src={heroImg} className="base" width="170" height="179" alt="" />
           <img src={reactLogo} className="framework" alt="React logo" />
           <img src={viteLogo} className="vite" alt="Vite logo" />
-          {/* Ensure the filename below matches your file in the public folder EXACTLY */}
-          <img src="/profile.jpg" alt="Profile" className="profile-img" width="100" />
+          {/* Fixed: Use the imported variable profileImg here */}
+          <img src={profileImg} alt="Profile" className="profile-img" width="100" />
         </div>
         <div>
           <h1>Get started</h1>
@@ -37,11 +39,11 @@ function App() {
       <section id="my-links" style={{ textAlign: 'center', padding: '20px' }}>
         <h2>Connect with Me</h2>
         <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', listStyle: 'none' }}>
-          <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noreferrer" className="social-link">
-             GitHub
+          <a href="https://github.com/mzeguererro" target="_blank" rel="noreferrer" className="social-link">
+             <strong>GitHub</strong>
           </a>
-          <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noreferrer" className="social-link">
-             LinkedIn
+          <a href="https://linkedin.com/in/mzeguererro" target="_blank" rel="noreferrer" className="social-link">
+             <strong>LinkedIn</strong>
           </a>
         </div>
       </section>
