@@ -4,7 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 // Make sure this file actually exists in src/assets/profile.jpg
-import profileImg from './assets/profile.jpg'
+import profileImg from './public/profile.jpg'
 
 function App() {
   const [count, setCount] = useState(0)
